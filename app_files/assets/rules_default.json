@@ -1,0 +1,115 @@
+{
+  "companies": [
+    {
+      "name_ar": "UPVC",
+      "name_en": "UPVC",
+      "series": [
+        {
+          "name_ar": "Imappen",
+          "name_en": "Imappen",
+          "templates": [
+            {
+              "name_ar": "جرار 2 ضلفة",
+              "name_en": "Sliding 2 Sashes",
+              "constants": {
+                "SASHES": 2,
+                "FLY_QTY": 1,
+                "ADD_W": 0.5,
+                "DED_H_SASH": 7,
+                "DED_H_FLY": 6,
+                "STOCK_LEN": 6.0,
+                "KERF": 0.003
+              },
+              "parts": [
+                {
+                  "group": "Sash",
+                  "name_ar": "ضلفة - أفقي",
+                  "name_en": "Sash - Horizontal",
+                  "formula": "(W + ADD_W) / SASHES",
+                  "qty": "SASHES * 2",
+                  "notes_ar": "علوي+سفلي لكل ضلفة",
+                  "notes_en": "Top+bottom per sash"
+                },
+                {
+                  "group": "Sash",
+                  "name_ar": "ضلفة - رأسي",
+                  "name_en": "Sash - Vertical",
+                  "formula": "H - DED_H_SASH",
+                  "qty": "SASHES * 2",
+                  "notes_ar": "قائمين لكل ضلفة",
+                  "notes_en": "2 jambs per sash"
+                },
+                {
+                  "group": "Fly",
+                  "name_ar": "سلك - أفقي",
+                  "name_en": "Flyscreen - Horizontal",
+                  "formula": "(W + ADD_W) / SASHES",
+                  "qty": "FLY_QTY * 2",
+                  "notes_ar": "سلك ضلفة واحدة افتراضياً",
+                  "notes_en": "Flyscreen (default 1 sash)"
+                },
+                {
+                  "group": "Fly",
+                  "name_ar": "سلك - رأسي",
+                  "name_en": "Flyscreen - Vertical",
+                  "formula": "H - DED_H_FLY",
+                  "qty": "FLY_QTY * 2",
+                  "notes_ar": "ارتفاع السلك",
+                  "notes_en": "Flyscreen height"
+                }
+              ]
+            },
+            {
+              "name_ar": "جرار 4 ضلفة",
+              "name_en": "Sliding 4 Sashes",
+              "constants": {
+                "SASHES": 4,
+                "FLY_QTY": 2,
+                "ADD_W": 0.0,
+                "DED_H_SASH": 0,
+                "DED_H_FLY": 0,
+                "STOCK_LEN": 6.5,
+                "KERF": 0.003
+              },
+              "parts": []
+            },
+            {
+              "name_ar": "مفصلي ضلفة",
+              "name_en": "Hinged 1 Sash",
+              "constants": {
+                "SASHES": 1,
+                "FLY_ENABLED": 0,
+                "ADD_W": 0.0,
+                "STOCK_LEN": 6.0,
+                "KERF": 0.003
+              },
+              "parts": []
+            },
+            {
+              "name_ar": "مفصلي 2 ضلفة",
+              "name_en": "Hinged 2 Sashes",
+              "constants": {
+                "SASHES": 2,
+                "FLY_ENABLED": 0,
+                "ADD_W": 0.0,
+                "STOCK_LEN": 6.0,
+                "KERF": 0.003
+              },
+              "parts": []
+            },
+            {
+              "name_ar": "ثابت",
+              "name_en": "Fixed",
+              "constants": {
+                "SASHES": 0,
+                "STOCK_LEN": 6.0,
+                "KERF": 0.003
+              },
+              "parts": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
